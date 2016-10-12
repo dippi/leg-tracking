@@ -147,18 +147,3 @@ class Tracker(object):
         # TODO see https://github.com/jmendeth/PyOpenNI
         def updateFromOni(sensorHandle, tracker):
             pass
-            # from primesense import openni2
-            # import numpy as np
-            # import matplotlib.pyplot as plt
-            #
-            # openni2.initialize()
-            # dev = openni2.Device.open_file(filename='../old/examples/exampleVideo.oni')
-            # dev.playback.set_repeat_enabled(False)
-            # depth_stream = dev.create_depth_stream()
-            # depth_stream.start()
-            # frame = depth_stream.read_frame()
-            # frame_data = frame.get_buffer_as_uint16()
-            # tmp = np.frombuffer(frame_data, dtype=np.int16)
-            # arr = np.reshape(tmp, (frame.height, frame.width))
-            # plt.imshow(arr)
-            # plt.show()
